@@ -1,0 +1,10 @@
+freebuff-baseline-windows
+Copyright 2026 Ilyass Bourass
+
+This project is an unofficial compatibility installer for Freebuff.
+
+It builds from the official Codebuff source repository:
+https://github.com/CodebuffAI/codebuff
+
+Codebuff is copyright its authors and is licensed separately under its own
+license. This repository does not claim affiliation with Codebuff or Freebuff.
