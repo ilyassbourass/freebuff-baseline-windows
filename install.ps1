@@ -66,15 +66,10 @@ function Patch-CodebuffBuildScript {
     }
 
     $content = [System.IO.File]::ReadAllText($buildScript)
-    $pattern = @"
-      if (process.platform === 'win32') {
-        tarArgs.unshift('--force-local')
-      }
+    $pattern = "(?ms)^\s*if\s*\(\s*process\.platform\s*===\s*['""]win32['""]\s*\)\s*\{\s*\r?\n\s*tarArgs\.unshift\(\s*['""]--force-local['""]\s*\)\s*\r?\n\s*\}\s*\r?\n"
 
-"@
-
-    if ($content.Contains($pattern)) {
-        $content = $content.Replace($pattern, "")
+    if ([regex]::IsMatch($content, $pattern)) {
+        $content = [regex]::Replace($content, $pattern, "")
         [System.IO.File]::WriteAllText($buildScript, $content)
         Write-Host "Patched unsupported Windows tar --force-local flag."
     } else {

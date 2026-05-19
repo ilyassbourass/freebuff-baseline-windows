@@ -48,7 +48,7 @@ Search terms this is meant to help with:
 
 | CPU | Windows | Official Freebuff binary | Baseline installer |
 | --- | --- | --- | --- |
-| Intel Core i5 650 | Windows x64 | Fails with AVX2 / `3221225501` | Works |
+| Intel Core i5 650 | Windows x64 | Fails with AVX2 / `3221225501` | Works, local reinstall test passed |
 
 Open a GitHub issue if you test another CPU. Include CPU model, Windows version, and the exact command output.
 
