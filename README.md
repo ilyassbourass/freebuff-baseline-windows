@@ -33,6 +33,8 @@ This workaround was tested on an `Intel Core i5 650`, where the official Freebuf
 
 Important limitation: Bun's baseline build is meant for older x64 CPUs without AVX2, but it still requires a compatible x64 CPU. This will not make every old computer work.
 
+If this fixes your machine, consider starring the repo so other old-CPU Windows users can find it.
+
 ## What The Installer Does
 
 The installer:
@@ -153,6 +155,10 @@ Freebuff and Codebuff are projects of their respective owners. This repository o
 - [GitHub README docs](https://docs.github.com/articles/about-readmes/)
 - [GitHub releases docs](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
 - [OpenSSF Best Practices Badge](https://openssf.org/best-practices-badge/)
+
+## Launch Notes
+
+See [docs/LAUNCH.md](docs/LAUNCH.md) for the publishing checklist, sharing plan, and maintainer notes.
 
 ## License
 
