@@ -22,6 +22,7 @@ This project is a compatibility installer. It does not bypass Freebuff server-si
 - Confirm `README.md` shows the AVX2 failure and working output screenshots.
 - Confirm the raw install URL returns HTTP 200.
 - Confirm the repo has topics: `freebuff`, `codebuff`, `bun`, `windows`, `avx2`, `baseline`, `old-cpu`, `cli`, `powershell`, `compatibility`.
+- Link the repo in existing upstream issues instead of opening duplicates.
 - Upload `assets/social-preview.png` in GitHub repo settings as the social preview image.
 
 ## Where To Share
@@ -59,6 +60,6 @@ People are cautious with PowerShell installers. Keep the trust model simple:
 ## Later Improvements
 
 - Add a signed release only if users ask for binaries.
-- Add GitHub Actions CI after the GitHub token has `workflow` scope.
+- Expand CI beyond syntax parsing if runtime cost is acceptable.
 - Add OpenSSF Best Practices Badge after the project has stable docs and issue handling.
 - Add a small website only if search traffic grows.

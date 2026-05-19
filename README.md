@@ -35,6 +35,23 @@ Important limitation: Bun's baseline build is meant for older x64 CPUs without A
 
 If this fixes your machine, consider starring the repo so other old-CPU Windows users can find it.
 
+Search terms this is meant to help with:
+
+- `freebuff exited immediately code 3221225501`
+- `freebuff CPU may not support AVX2`
+- `freebuff 0xC000001D`
+- `freebuff illegal instruction Windows`
+- `freebuff old CPU Windows`
+- `freebuff bun-windows-x64-baseline`
+
+## Compatibility Reports
+
+| CPU | Windows | Official Freebuff binary | Baseline installer |
+| --- | --- | --- | --- |
+| Intel Core i5 650 | Windows x64 | Fails with AVX2 / `3221225501` | Works |
+
+Open a GitHub issue if you test another CPU. Include CPU model, Windows version, and the exact command output.
+
 ## What The Installer Does
 
 The installer:
@@ -117,6 +134,13 @@ This installer sets `NEXT_PUBLIC_CODEBUFF_APP_URL=https://www.codebuff.com` in t
 ### Limited mode / country restrictions
 
 This installer only solves the local CPU binary compatibility issue. It does not bypass Freebuff server-side country, quota, account, or model restrictions.
+
+### Upstream Freebuff issues
+
+Related upstream reports:
+
+- [Codebuff issue #654: Freebuff exits immediately on Windows with code 3221225501](https://github.com/CodebuffAI/codebuff/issues/654)
+- [Codebuff issue #497: Please add support for old CPU's](https://github.com/CodebuffAI/codebuff/issues/497)
 
 ## Uninstall
 
