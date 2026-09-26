@@ -1,0 +1,23 @@
+name: 🐛 Bug Report
+description: Report an issue with the PowerShell installer or build script
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report an installation, build, or launcher issue.
+  - type: textarea
+    id: error
+    attributes:
+      label: Error Details
+      description: What error did install.ps1 produce?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Info
+      description: PowerShell version, Windows version, and CPU model.
+    validations:
+      required: true

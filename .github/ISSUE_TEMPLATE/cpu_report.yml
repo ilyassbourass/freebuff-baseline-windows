@@ -1,0 +1,31 @@
+name: 💻 CPU Compatibility Report
+description: Report a CPU model you successfully or unsuccessfully tested
+title: "[CPU Report]: "
+labels: ["compatibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help the community know which legacy CPUs work with Freebuff baseline!
+  - type: input
+    id: cpu_model
+    attributes:
+      label: CPU Model
+      description: Exact CPU name (e.g., Intel Core i5 650, Xeon X5670)
+      placeholder: Intel Core i5 750
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Test Result
+      options:
+        - "Works 100% (freebuff commands run successfully)"
+        - "Fails with error"
+    validations:
+      required: true
+  - type: textarea
+    id: terminal_output
+    attributes:
+      label: Terminal Output
+      description: Paste the output of `freebuff --version` or the crash details.

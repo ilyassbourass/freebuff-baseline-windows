@@ -1,12 +1,23 @@
-# Run Freebuff on older Windows CPUs without AVX2
+<p align="center">
+  <img src="assets/hero-banner.svg" alt="Freebuff Baseline Hero Banner" width="100%">
+</p>
 
-Unofficial compatibility installer for Freebuff on older Windows x64 machines.
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Windows%20x64-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64">
+  <img src="https://img.shields.io/badge/Runtime-Bun%20x64%20Baseline-f59e0b?style=for-the-badge&logo=bun&logoColor=white" alt="Bun Baseline">
+  <img src="https://img.shields.io/badge/Installer-PowerShell%201--Liner-5391FE?style=for-the-badge&logo=powershell&logoColor=white" alt="PowerShell">
+  <img src="https://img.shields.io/badge/CPU%20Req-Non--AVX2%20Compatible-emerald?style=for-the-badge" alt="Non-AVX2">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License">
+</p>
 
-If the official Freebuff binary exits with an AVX2 or illegal-instruction error, this repo builds Freebuff from the official Codebuff source using Bun's `bun-windows-x64-baseline` runtime.
+<p align="center">
+  <strong>Unofficial compatibility installer for Freebuff on older Windows x64 machines lacking AVX2 instructions.</strong><br>
+  Builds Freebuff from official Codebuff source using Bun's baseline target to fix crash code <code>3221225501</code> (<code>0xC000001D</code>).
+</p>
 
-![Freebuff baseline installer preview](assets/freebuff-baseline-preview.png)
+---
 
-## Quick Install
+## ⚡ Quick 1-Line PowerShell Install
 
 Run this in PowerShell:
 
